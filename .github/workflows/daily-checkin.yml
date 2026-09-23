@@ -4,6 +4,8 @@ on:
   schedule:
     # 每天北京时间 09:07 (UTC 01:07)，避开整点拥堵
     - cron: '7 1 * * *'
+    # 临时诊断：每小时第37分钟触发，确认 GitHub scheduler 是否正常
+    - cron: '37 * * * *'
   workflow_dispatch: # 支持手动触发
 
 jobs:
